@@ -1,0 +1,182 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        .btn {
+            border-color: rgb(207, 0, 0);
+            color: dodgerblue;
+            transition: all 0.5s;
+            font-size: 28px;
+        }
+
+        .btn {
+            background: rgb(255, 36, 36);
+            color: white;
+            cursor: pointer;
+        }
+
+        ​.btn:hover {
+            background-color: #e04545
+        }
+
+        .btn span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .btn span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .btn:hover span {
+            padding-right: 25px;
+        }
+
+        .btn:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+    <style type="text/css">
+        .blinking {
+            animation: blinkingText 1.2s infinite;
+        }
+
+        @keyframes blinkingText {
+            80% {
+                color: rgb(255, 174, 0);
+            }
+
+            50% {
+                color: rgb(143, 71, 230);
+            }
+
+            30% {
+                color: rgb(239, 81, 126);
+            }
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Team</title>
+</head>
+
+<body bgcolor="#F9E79F">
+    <marquee bgcolor="#000000" style="color: #82e2e2; font-size: xx-large; ; font-family: Book Antiqua"
+        behavior="alternate" style=" scroll-behavior: smooth; " scrollamount="300">
+        /-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+    </marquee>
+
+    <center>
+        <br>
+        <h3>
+            <font face="Verdana" color="darkblue"> TEAM DETAILS </font>
+        </h3>
+
+        <div>
+
+            <!-- <img src="{{baseUrl}}/p{{d.image}}" alt=""> -->
+            <font size="10">Django using Python </font>
+
+            <h3>
+                <font face="Verdana" color="darkblue"> Project Topic: MOVIE TICKET BOOKING WEBSITE </font>
+            </h3>
+
+            <font face="Courier New" size=10 color="Blue"><span class="blinking"><b> Guided By : DR. BALAJI SHETTY
+                    </b></span></font>
+            <font face="Courier New" size=10 color="Blue"><span class="blinking"><b>{{d.name}}</b></span></font>
+
+            <table border="1px" align="center" cellpadding="10px" cellspacing="1px" style="font-size:larger;">
+                <tr>
+                    <th>S.No.</th>
+                    <th>Student name</th>
+                    <th>Roll no</th>
+                    <th>Branch</th>
+                    <th>Email</th>
+                    <th>Social Media LINK</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>VAIBHAV &nbsp; SARDAR</td>
+                    <td>20</td>
+                    <td>IT</td>
+                    <td>2019bit019@sggs.ac.in</td>
+                    <td><a
+                            href="https://www.linkedin.com/in/vaibhav-sardar-b797671a4">https://www.linkedin.com/in/vaibhav-sardar-b797671a4</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>SUHAS &nbsp; SHENDE</td>
+                    <td>11</td>
+                    <td>IT</td>
+                    <td>2019bit010@sggs.ac.in</td>
+                    <td><a
+                            href="https://www.linkedin.com/mwlite/in/suhas-shende-b46455213">https://www.linkedin.com/mwlite/in/suhas-shende-b46455213</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>OMKAR &nbsp; DOKHALE</td>
+                    <td>04</td>
+                    <td>IT</td>
+                    <td>2018bit004@sggs.ac.in</td>
+                    <td><a
+                            href="https://www.linkedin.com/in/omkar-dokhale-11931521b">https://www.linkedin.com/in/omkar-dokhale-11931521b</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>AYUSH &nbsp; MADAVI</td>
+                    <td>12</td>
+                    <td>IT</td>
+                    <td>2019bit011@sggs.ac.in</td>
+                    <td><a
+                            href="https://www.linkedin.com/in/ayush-madavi-3092b6242">https://www.linkedin.com/in/ayush-madavi-3092b6242</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>TARFAN &nbsp; KHAN</td>
+                    <td>08</td>
+                    <td>IT</td>
+                    <td>2018bit008@sggs.ac.in</td>
+                    <td><a
+                            href="https://www.linkedin.com/in/tarfan-khan-715b67242">https://www.linkedin.com/in/tarfan-khan-715b67242</a>
+                    </td>
+                </tr>
+
+
+
+            </table>
+
+
+            <a href="/index/">
+                <h3>
+                    << Click here to goto HOME</h3>
+            </a>
+
+        </div>
+    </center>
+
+
+    <marquee bgcolor="#001180" style="color: #7cb0dd; font-size:xx-large; font-family: Book Antiqua"
+        behavior="alternate" style=" scroll-behavior: smooth; " scrollamount="300">
+        /-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+    </marquee>
+</body>
+
+</html>
